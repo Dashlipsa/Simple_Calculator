@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator_web</title>
+    <link rel="stylesheet" href="calculator.css">
+    
+</head>
+<body>
+    <div class="outerbound">
+        <input type="text" id="display">
+        <div class="btnContainer">
+            <button class="button"  onclick="currentDisplay=' ';
+            const displayInput = document.querySelector('#display');
+           displayInput.value = currentDisplay;">C</button>
+            <button class="button" onclick="currentDisplay=currentDisplay+'1';
+             const displayInput = document.querySelector('#display');
+            displayInput.value = currentDisplay; 
+            ">1</button>
+            <button class="button"  onclick="currentDisplay=currentDisplay+'2';
+            const displayInput = document.querySelector('#display');
+           displayInput.value = currentDisplay;">2</button>
+            <button class="button"  onclick="currentDisplay=currentDisplay+'+';
+            const displayInput = document.querySelector('#display');
+           displayInput.value = currentDisplay;">+</button>
+            <button class="button"  onclick="currentDisplay=currentDisplay+'3';
+            const displayInput = document.querySelector('#display');
+           displayInput.value = currentDisplay;">3</button>
+            <button class="button"  onclick="currentDisplay=currentDisplay+'4';
+            const displayInput = document.querySelector('#display');
+           displayInput.value = currentDisplay;">4</button>
+            <button class="button"  onclick="currentDisplay=currentDisplay+'-';
+            const displayInput = document.querySelector('#display');
+           displayInput.value = currentDisplay;">-</button>
+            <button class="button"  onclick="currentDisplay=currentDisplay+'5';
+            const displayInput = document.querySelector('#display');
+           displayInput.value = currentDisplay;">5</button>
+            <button class="button"  onclick="currentDisplay=currentDisplay+'6';
+            const displayInput = document.querySelector('#display');
+           displayInput.value = currentDisplay;">6</button>
+            <button class="button"  onclick=" currentDisplay=currentDisplay+'*';
+            const displayInput = document.querySelector('#display');
+           displayInput.value = currentDisplay;">*</button>
+            <button class="button"  onclick="currentDisplay=currentDisplay+'7';
+            const displayInput = document.querySelector('#display');
+           displayInput.value = currentDisplay;">7</button>
+            <button class="button"  onclick="currentDisplay=currentDisplay+'8';
+            const displayInput = document.querySelector('#display');
+           displayInput.value = currentDisplay;">8</button>
+            <button class="button"  onclick="currentDisplay=currentDisplay+'/';
+            const displayInput = document.querySelector('#display');
+           displayInput.value = currentDisplay;">/</button>
+            <button class="button"  onclick="
+            let result=eval(currentDisplay);
+            currentDisplay=result;
+            const displayInput = document.querySelector('#display');
+           displayInput.value = currentDisplay;">=</button>
+            <button class="button"  onclick="currentDisplay=currentDisplay+'9';
+            const displayInput = document.querySelector('#display');
+           displayInput.value = currentDisplay;">9</button>
+            <button class="button"  onclick="currentDisplay=currentDisplay+'0';
+            const displayInput = document.querySelector('#display');
+           displayInput.value = currentDisplay;">0</button>
+            <button class="button"  onclick="currentDisplay=currentDisplay+'.';
+            const displayInput = document.querySelector('#display');
+           displayInput.value = currentDisplay;">.</button>
+        </div>
+    </div>
+    <script>
+        let currentDisplay = ' ';
+        const displayInput = document.querySelector("#display");
+        displayInput.value = currentDisplay; 
+    </script>
+</body>
+</html>
